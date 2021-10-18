@@ -1,0 +1,13 @@
+.mobile-menu-text {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.26px;
+    text-align: center;
+    color: var(--main-text-color);
+}
+
+.mobile-menu-text:hover,
+.mobile-menu-text:focus {
+    color: var(--primary-accent-color);
+}
