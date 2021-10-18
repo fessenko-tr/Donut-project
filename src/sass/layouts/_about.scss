@@ -1,0 +1,36 @@
+.about-title {
+    font-weight: 400;
+    color: var(--main-text-color);
+}
+
+.about-title {
+    @include text-align(center);
+
+    @media screen and (min-width: 768px) {
+        @include text-align(start);
+    }
+}
+
+.about-text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: var(--main-text-color); 
+}
+
+.about-text {
+    @include line-height(16px, 19px);
+  
+    @media screen and (min-width: 1200px) {
+      @include line-height(18px, 22px);
+    }
+  }
+
+.about-text-box {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-all {
+    display: flex;
+    justify-content: space-between;
+}
