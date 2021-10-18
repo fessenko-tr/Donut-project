@@ -1,0 +1,29 @@
+.title,
+.title-main,
+.sup-title {
+  font-family: Caveat Brush, cursive;
+}
+
+.title {
+  @include line-height(24px, 65px);
+
+  @media screen and (min-width: 1200px) {
+    @include line-height(36px, 65px);
+  }
+}
+
+.title-main {
+  @include line-height(30px, 38px);
+
+  @media screen and (min-width: 1200px) {
+    @include line-height(64px, 65px);
+  }
+}
+
+.sup-title {
+  @include line-height(18px, 22px);
+
+  @media screen and (min-width: 1200px) {
+    @include line-height(24px, 30px);
+  }
+}
