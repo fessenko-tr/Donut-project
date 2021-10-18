@@ -12,3 +12,17 @@
     @include line-height(24px, 65px);
   }
 }
+
+.read-more-btn {
+  border: none;
+  font-family: "Caveat Brush";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 65px;
+}
+
+@media screen and (min-width: 1200px) {
+  .read-more-btn {
+    display: none;
+  }
+}
