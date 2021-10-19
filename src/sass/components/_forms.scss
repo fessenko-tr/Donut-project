@@ -32,11 +32,15 @@
 }
 
 .contact-form {
-  @include flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 @media screen and (min-width:768px) {
+  .contact-form {
+    @include flex;
+    flex-direction: column;
+  }
+
   .contact-input.form-input {
     width: 410px;
   }
