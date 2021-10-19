@@ -1,0 +1,10 @@
+.form-input {
+  width: 265px;
+  margin-bottom: 25px;
+  border-color: transparent;
+  border-bottom: 1px solid var(--button-color);
+
+  &::placeholder {
+    color: rgba(171, 129, 108, 0.5);
+  }
+}

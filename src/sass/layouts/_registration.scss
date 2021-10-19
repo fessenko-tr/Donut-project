@@ -1,0 +1,35 @@
+.reg-container {
+  background-color: var(--registration-bg-color);
+  
+  text-align: center;
+
+  flex-direction: column;
+  @include flex;
+
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+}
+
+.reg-text {
+  margin-top: 11px;
+  margin-bottom: 25px;
+}
+
+.reg-cost {
+  position: relative;
+}
+
+.reg-cost::after {
+  content: "";
+  margin-top: 20px;
+  display: block;
+  width: 265px;
+  border: 1px solid rgba(171, 129, 108, 0.5);
+}
+
+.reg-form-left-side {
+  padding-bottom: 11px;
+}
+
+.reg-form-text {
+  margin-bottom: 17px;
+}
