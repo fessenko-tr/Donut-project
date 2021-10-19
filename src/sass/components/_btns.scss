@@ -1,11 +1,8 @@
-.button {
+.btn {
   font-family: "Caveat Brush";
-  font-weight: 400;
   border-radius: 25px;
   background-color: var(--main-bg-color);
-}
 
-.button {
   @include line-height(18px, 65px);
 
   @media screen and (min-width: 1200px) {
@@ -16,9 +13,9 @@
 .read-more-btn {
   border: none;
   font-family: "Caveat Brush";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 65px;
+
+  @include line-height(18px, 65px);
+  
   cursor: pointer;
   background: none;
   color: var(--button-color);
