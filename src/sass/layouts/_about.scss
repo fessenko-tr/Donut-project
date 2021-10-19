@@ -1,5 +1,4 @@
 .about-title {
-    font-weight: 400;
     color: var(--main-text-color);
 }
 
@@ -13,7 +12,6 @@
 
 .about-text {
     font-family: "Montserrat";
-    font-weight: 400;
     color: var(--main-text-color); 
 }
 
@@ -23,15 +21,12 @@
     @media screen and (min-width: 1200px) {
       @include line-height(18px, 22px);
     }
-  }
-
-.about-text-box {
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: column;
 }
 
-.about-position {
-    display: flex;
-    justify-content: space-between;
+.about-text-box {
+    width: calc(100% / 2 - 15px);
+}
+
+.about-img {
+    width: calc(100% / 2 - 15px);
 }
