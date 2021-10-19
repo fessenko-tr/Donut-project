@@ -32,8 +32,10 @@
     }
 }
 
-.about-text-box {
-    width: calc(100% / 2 - 15px);
+@media screen and (min-width: 768px) {
+    .about-text-box {
+        width: calc(100% / 2 - 15px);
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -42,7 +44,8 @@
         align-items: flex-end;
     }
 }
-
-.about-img {
-    width: calc(100% / 2 - 15px);
+@media screen and (min-width: 768px) {   
+    .about-img {
+        width: calc(100% / 2 - 15px);
+    }
 }
