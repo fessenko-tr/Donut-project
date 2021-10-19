@@ -1,18 +1,21 @@
-.reg-container {
-  background-color: var(--registration-bg-color);
+@media screen and (max-width:797px) {
+  .reg .container {
+    background-color: var(--registration-bg-color);
   
-  width: 290px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin-left: auto;
-  margin-right: auto;
+    width: 290px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
 
-  text-align: center;
+    text-align: center;
 
-  flex-direction: column;
-  @include flex;
+    flex-direction: column;
+    @include flex;
 
-  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+    border-radius: 150px 150px 0px 0px;
+ }
 }
 
 .reg-text {
