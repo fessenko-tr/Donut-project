@@ -1,18 +1,28 @@
 .btn {
   font-family: "Caveat Brush";
   border-radius: 25px;
+  font-size: 18px;
+  color: #FFFFFF;
   background-color: var(--main-bg-color);
+  border: none;
+  width: 145px;
+  height: 40px;
+}
 
+.btn {
   @include line-height(18px, 65px);
 
   @media screen and (min-width: 1200px) {
     @include line-height(24px, 65px);
+    width: 158px;
+    height: 45px;
   }
 }
 
 .read-more-btn {
   border: none;
   font-family: "Caveat Brush";
+  font-size: 18px;
 
   @include line-height(18px, 65px);
   
