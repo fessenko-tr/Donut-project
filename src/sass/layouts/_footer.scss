@@ -12,11 +12,13 @@
 //0-767
 .footer-address {
   margin-top: 34px;
+  padding-bottom: 19px;
 }
 //768+
 @media screen and (min-width: 768px) {
   .footer-address {
     margin-top: 51px;
+    padding-bottom: 21px;
   }
 }
 
