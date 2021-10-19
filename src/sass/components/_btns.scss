@@ -3,19 +3,30 @@
   border-radius: 25px;
   font-size: 18px;
   color: #FFFFFF;
-  background-color: var(--main-bg-color);
+  background-color: var(--button-color);
   border: none;
-  width: 145px;
+  min-width: 145px;
   height: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .btn {
-  @include line-height(18px, 65px);
+  font-size: 18px;
 
   @media screen and (min-width: 1200px) {
-    @include line-height(24px, 65px);
-    width: 158px;
+    font-size: 24px;
+    min-width: 158px;
     height: 45px;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: var(--primary-accent-color);
+  }
+
+  &:active {
+    background-color: var(--secondary-accent-color);
   }
 }
 
@@ -38,10 +49,27 @@
   }
 }
 
-.read-more-btn:hover {
+.read-more-btn:hover,
+.read-more-btn:focus {
   color: var(--primary-accent-color);
 }
 
 .read-more-btn:active {
   color: var(--secondary-accent-color);
+}
+
+.reg-form-submit {
+  align-self: center;
+}
+
+@media screen and (min-width:768px) {
+  .reg-form-submit {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .reg-form-submit {
+    margin-left: 38px;
+  }
 }

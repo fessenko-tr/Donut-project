@@ -7,6 +7,8 @@
 .title {
   @include line-height(24px, 65px);
 
+  text-align: center;
+
   @media screen and (min-width: 1200px) {
     @include line-height(36px, 65px);
   }
