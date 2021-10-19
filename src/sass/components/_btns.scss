@@ -3,7 +3,7 @@
   border-radius: 25px;
   font-size: 18px;
   color: #FFFFFF;
-  background-color: var(--main-bg-color);
+  background-color: var(--button-color);
   border: none;
   min-width: 145px;
   height: 40px;
@@ -56,4 +56,20 @@
 
 .read-more-btn:active {
   color: var(--secondary-accent-color);
+}
+
+.reg-form-submit {
+  align-self: center;
+}
+
+@media screen and (min-width:768px) {
+  .reg-form-submit {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .reg-form-submit {
+    margin-left: 38px;
+  }
 }
