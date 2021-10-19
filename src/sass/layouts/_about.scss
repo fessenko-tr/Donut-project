@@ -1,0 +1,50 @@
+.about-title {
+    color: var(--main-text-color);
+}
+
+.about-title {
+    text-align: center;
+}
+
+    @media screen and (min-width: 768px) {
+        .about-title {
+        text-align: start;
+    }
+}
+
+.about-text {
+    color: var(--main-text-color); 
+}
+
+.about-text {
+    @include line-height(16px, 19px);
+  
+    @media screen and (min-width: 1200px) {
+      @include line-height(18px, 22px);
+    }
+}
+  
+@media screen and (min-width: 768px) {
+    .about-position {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-text-box {
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-text-box {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 768px) {   
+    .about-img {
+        width: calc(100% / 2 - 15px);
+    }
+}
