@@ -1,0 +1,7 @@
+.contact-subtitle {
+  @include line-height(16px, 65px);
+
+  @media screen and (min-width:1200px) {
+    @include line-height(18px, 65px)
+  }
+}
