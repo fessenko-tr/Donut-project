@@ -28,6 +28,7 @@
 .about-text-box {
     display: flex;
     justify-content: flex-start;
+    flex-flow: column;
 }
 
 .about-position {
