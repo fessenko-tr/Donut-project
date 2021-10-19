@@ -1,43 +1,54 @@
-<header>
+<header class="header">
   <div class="container">
-    <nav>
-      <a href="./">
-        <svg width="158" height="71">
+    <nav class="header-top">
+      <a class="header-logo" href="./">
+        <svg class="header-icon">
           <use href="./images/sprite.svg#logo"></use>
         </svg>
       </a>
-      <ul>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Program</a></li>
-        <li><a href="#">Reviews</a></li>
-        <li><a href="#">Contacts</a></li>
+      <ul class="header-nav list">
+        <li class="header-nav-list"><a class="header-nav-link link" href="#">About us</a></li>
+        <li class="header-nav-list"><a class="header-nav-link link" href="#">Program</a></li>
+        <li class="header-nav-list"><a class="header-nav-link link" href="#">Reviews</a></li>
+        <li class="header-nav-list"><a class="header-nav-link link" href="#">Contacts</a></li>
       </ul>
     </nav>
-    <h1>Donut Masterclass with the Donut King</h1>
-    <h2>Hosted by Eva Green</h2>
-    <a href="#">Register</a>
-    <ul>
-      <li>
-        <a href="#">
-          <svg width="24" height="19">
-            <use href="./images/sprite.svg#twitter"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <svg width="19" height="19">
-            <use href="./images/sprite.svg#instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <svg width="10" height="19">
-            <use href="./images/sprite.svg#facebook"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+    <div class="header-bottom">
+      <h1 class="header-title">Donut Masterclass with the Donut King</h1>
+      <h2 class="header-subtite">Hosted by Eva Green</h2>
+      <a class="header-register-btn link" href="#">Register</a>
+      <ul class="social-list list">
+        <li class="social-list-item">
+          <a class="header-social-link link" href="#">
+            <svg class="twitter-icon">
+              <use href="./images/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="header-social-link link" href="#">
+            <svg class="instagram-icon">
+              <use href="./images/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list-item">
+          <a class="header-social-link link" href="#">
+            <svg class="facebook-icon">
+              <use href="./images/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
+  <button
+    class="mobile-btn menu-toggle js-open-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+  >
+    <svg class="open-menu-icon" width="30" height="16">
+      <use href="./images/sprite.svg#menu"></use>
+    </svg>
+  </button>
 </header>
