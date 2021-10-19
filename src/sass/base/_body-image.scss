@@ -1,0 +1,42 @@
+body {
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/background-images/pic-donuts-mobile.png),
+      url(../images/background-images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 130px, 100%;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/background-images/bg-mobile@2x.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/background-images/pic-donuts-tablet.png),
+      url(../images/background-images/bg-tablet.png);
+    background-repeat: no-repeat;
+    background-size: 378px, 100%;
+    background-position-x: 254px, 0px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/background-images/bg-tablet@2x.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/background-images/pic-donuts-desktop.png),
+      url(../images/background-images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 793px, 100%;
+    background-position: right top, left top;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/background-images/bg-desktop@2x.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+}
