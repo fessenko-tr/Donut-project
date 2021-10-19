@@ -3,15 +3,16 @@
 }
 
 .about-title {
-    @include text-align(center);
+    text-align: center;
+}
 
     @media screen and (min-width: 768px) {
-        @include text-align(start);
+        .about-title {
+        text-align: start;
     }
 }
 
 .about-text {
-    font-family: "Montserrat";
     color: var(--main-text-color); 
 }
 
@@ -22,15 +23,10 @@
       @include line-height(18px, 22px);
     }
 }
-
-.about-position {
-    display: flex;
-    flex-flow: column;
-}
-
   
 @media screen and (min-width: 768px) {
     .about-position {
+    display: flex;
     flex-flow: row;
     justify-content: space-between;
     }
