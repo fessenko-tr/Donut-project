@@ -23,8 +23,28 @@
     }
 }
 
+.about-position {
+    display: flex;
+    flex-flow: column;
+}
+
+  
+@media screen and (min-width: 768px) {
+    .about-position {
+    flex-flow: row;
+    justify-content: space-between;
+    }
+}
+
 .about-text-box {
     width: calc(100% / 2 - 15px);
+}
+
+@media screen and (min-width: 1200px) {
+    .about-text-box {
+        margin-bottom: 30px;
+        align-items: flex-end;
+    }
 }
 
 .about-img {
