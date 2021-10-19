@@ -8,3 +8,17 @@
     color: rgba(171, 129, 108, 0.5);
   }
 }
+
+@media screen and (min-width:768px) {
+  .reg-form {
+    display: flex;
+  }
+
+  .form-input {
+    width: 234px;
+  }
+
+  .form-input:last-child {
+    margin-bottom: 0;
+  }
+}
