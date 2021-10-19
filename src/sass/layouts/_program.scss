@@ -1,33 +1,70 @@
 .program-container {
-    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        right: -25px;
+    }
 }
 
+.program-left-side {
+    @media screen and (min-width: 768px) {
+        width: calc(100% / 2 - 15px);
+        margin-right: 25px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 392px;
+    }
+}
 
+.program-title {
+    color: var(--main-text-color);
+    text-align: center;
 
+    @media screen and (min-width: 768px) {
+        text-align: start;
+    }
+}
+
+.program-text {
+    color: var(--main-text-color);
+    margin-bottom: 30px;
+
+    @include line-height(16px, 19px);
+
+    @media screen and (min-width: 1200px) {
+        @include line-height(18px, 22px);
+    }
+}
+
+.program-reset-margin {
+    margin-bottom: 0;
+}
 
 .program-right-side {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
-  }
+    
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 2 - 15px);
+    }
+}
   
-  .program-event {
+.program-event {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
     list-style-type: none;
     text-align: center;
-    border-radius: 50%;
     width: 142px;
-    height: 142px;
-    background-color: var(--main-bg-color);
-    box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
-    padding: 13px;
+    height: 170px;
     
     @media screen and (min-width: 1200px) {
         width: 180px;
-        height: 180px;
+        height: 220px;
     }
-  }
-
+}
   
   .program-event:nth-child(odd) {
       margin-bottom: 25px;
@@ -36,8 +73,41 @@
           margin-bottom: 56px;
         }
     }
+
+.program-event-img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 76px;
+    height: 84px;
     
-    .program-event-title {
+    @media screen and (min-width: 1200px) {
+        width: 90px;
+        height: 110px;
+    }
+    transform: translateX(-50%)
+}
+
+  .program-event-ball {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 50%;
+    width: 142px;
+    height: 142px;
+    background-color: var(--main-bg-color);
+    box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+    padding-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+        width: 180px;
+        height: 180px;
+        padding-bottom: 11px;
+    }
+  }
+    
+.program-event-title {
     margin-top: 4px;
     margin-bottom: 13px;
     
@@ -57,4 +127,11 @@
         @include line-height(16px, 19px);
         margin-bottom: 17px;
     }
+  }
+
+  .program-event-svg {
+      @media screen and (min-width: 1200px) {
+          width: 31px;
+          height: 25px;
+      }
   }
