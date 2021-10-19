@@ -1,3 +1,37 @@
-.button {
+.btn {
+  font-family: "Caveat Brush";
+  border-radius: 25px;
   background-color: var(--main-bg-color);
+
+  @include line-height(18px, 65px);
+
+  @media screen and (min-width: 1200px) {
+    @include line-height(24px, 65px);
+  }
+}
+
+.read-more-btn {
+  border: none;
+  font-family: "Caveat Brush";
+
+  @include line-height(18px, 65px);
+  
+  cursor: pointer;
+  background: none;
+  color: var(--button-color);
+  padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .read-more-btn {
+    display: none;
+  }
+}
+
+.read-more-btn:hover {
+  color: var(--primary-accent-color);
+}
+
+.read-more-btn:active {
+  color: var(--secondary-accent-color);
 }
