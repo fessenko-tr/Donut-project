@@ -19,10 +19,22 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 65px;
+  cursor: pointer;
+  background: none;
+  color: var(--button-color);
+  padding: 0;
 }
 
 @media screen and (min-width: 1200px) {
   .read-more-btn {
     display: none;
   }
+}
+
+.read-more-btn:hover {
+  color: var(--primary-accent-color);
+}
+
+.read-more-btn:active {
+  color: var(--secondary-accent-color);
 }
