@@ -58,6 +58,19 @@
   color: var(--secondary-accent-color);
 }
 
+@media screen and (max-width:1199px) {
+  
+
+.tab_content {
+  display: none;
+}
+
+.read-more-open {
+  display: block;
+}
+}
+
+
 .reg-form-submit {
   align-self: center;
 }
