@@ -58,8 +58,11 @@
   color: var(--secondary-accent-color);
 }
 
+@media screen and (max-width:1199px) {
+  
 .hidden_block {
   display: none;
+}
 }
 
 .visible_block {
