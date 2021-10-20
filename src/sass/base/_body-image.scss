@@ -1,48 +1,53 @@
 body {
   @media screen and (max-width: 767px) {
     background-image: url(../images/background-images/pic-donuts-mobile.png),
+      url(../images/background-images/set-mobile.png),
       url(../images/background-images/bg-mobile.png),
       url(../images/background-images/flour-mobile.png),
       url(../images/background-images/bg-reviews-mobile.png);
     background-repeat: no-repeat;
-    background-size: 130px, 100%, 87px, 100%;
-    background-position: left top, left top, right bottom, left 0px bottom 216px;
+    background-size: 130px, 290px, 100%, 87px, 100%;
+    background-position: left top, left 55% top 295px, left top, right bottom, left 0px bottom 216px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/background-images/pic-donuts-mobile@2x.png),
+        url(../images/background-images/set-mobile@2x.png),
         url(../images/background-images/bg-mobile@2x.png),
         url(../images/background-images/flour-mobile@2x.png),
         url(../images/background-images/bg-reviews-mobile@2x.png);
       background-repeat: no-repeat;
-      background-size: 130px, 100%, 87px, 100%;
-      background-position: left top, left top, right bottom, left 0px bottom 216px;
+      background-size: 130px, 290px, 100%, 87px, 100%;
+      background-position: left top, left 100px top 314px, left top, right bottom,
+        left 0px bottom 216px;
     }
   }
   @media screen and (min-width: 768px) {
     background-image: url(../images/background-images/pic-donuts-tablet.png),
       url(../images/background-images/bg-tablet.png),
+      url(../images/background-images/set-tablet.png),
       url(../images/background-images/flour-tablet.png),
       url(../images/background-images/confetti-tablet.png),
       url(../images/background-images/eaten-donut-tablet.png),
       url(../images/background-images/bg-reviews-tablet.png);
 
     background-repeat: no-repeat;
-    background-size: 378px, 100%, 155px, 375px, 200px, 100%;
-    background-position: right 120px top 0px, left top, right bottom, bottom 375px right -100px,
-      bottom 600px left 0px, left 0px bottom 63px;
+    background-size: 378px, 100%, 330px, 155px, 375px, 200px, 100%;
+    background-position: right 120px top 0px, left top, left 11px top 377px, right bottom,
+      bottom 375px right -100px, bottom 600px left 0px, left 0px bottom 63px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/background-images/pic-donuts-tablet.png),
         url(../images/background-images/bg-tablet@2x.png),
+        url(../images/background-images/set-tablet@2x.png),
         url(../images/background-images/flour-tablet@2x.png),
         url(../images/background-images/confetti-tablet@2x.png),
         url(../images/background-images/eaten-donut-tablet@2x.png),
         url(../images/background-images/bg-reviews-tablet@2x.png);
 
       background-repeat: no-repeat;
-      background-size: 378px, 100%, 155px, 375px, 200px, 100%;
-      background-position: right 120px top 0px, left top, right bottom, bottom 375px right -100px,
-        bottom 600px left 0px, left 0px bottom 63px;
+      background-size: 378px, 100%, 330px, 155px, 375px, 200px, 100%;
+      background-position: right 120px top 0px, left top, left 11px top 377px, right bottom,
+        bottom 375px right -100px, bottom 600px left 0px, left 0px bottom 63px;
     }
   }
 
@@ -50,29 +55,31 @@ body {
     background-image: url(../images/background-images/pic-donuts-desktop.png),
       url(../images/background-images/spoon-tablet.png),
       url(../images/background-images/bg-desktop.png),
+      url(../images/background-images/set-desktop.png),
       url(../images/background-images/flour-desktop.png),
       url(../images/background-images/confetti-desktop.png),
       url(../images/background-images/eaten-donut-desktop.png),
       url(../images/background-images/bg-reviews-desktop.png);
 
     background-repeat: no-repeat;
-    background-size: 793px, 124px, 100%, 362px, 375px, 192px, 100%;
-    background-position: right top, top 175px left 0px, left top, right bottom,
+    background-size: 793px, 124px, 100%, 512px, 362px, 375px, 192px, 100%;
+    background-position: right top, top 175px left 0px, left top, left 72px top 525px, right bottom,
       bottom 280px right 170px, bottom 640px left 77px, left bottom;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/background-images/pic-donuts-desktop@2x.png),
         url(../images/background-images/spoon-tablet@2x.png),
         url(../images/background-images/bg-desktop@2x.png),
+        url(../images/background-images/set-desktop@2x.png),
         url(../images/background-images/flour-desktop@2x.png),
         url(../images/background-images/confetti-desktop@2x.png),
         url(../images/background-images/eaten-donut-desktop@2x.png),
         url(../images/background-images/bg-reviews-desktop@2x.png);
 
       background-repeat: no-repeat;
-      background-size: 793px, 124px, 100%, 362px, 375px, 192px, 100%;
-      background-position: right top, top 175px left 0px, left top, right bottom,
-        bottom 280px right 170px, bottom 640px left 77px, left bottom;
+      background-size: 793px, 124px, 100%, 512px, 362px, 375px, 192px, 100%;
+      background-position: right top, top 175px left 0px, left top, left 72px top 525px,
+        right bottom, bottom 280px right 170px, bottom 640px left 77px, left bottom;
     }
   }
 }
