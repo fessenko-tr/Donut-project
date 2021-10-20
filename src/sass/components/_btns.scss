@@ -60,14 +60,16 @@
 
 @media screen and (max-width:1199px) {
   
-.hidden_block {
+
+.tab_content {
   display: none;
+}
+
+.read-more-open {
+  display: block;
 }
 }
 
-.visible_block {
-  display: block;
-}
 
 .reg-form-submit {
   align-self: center;
@@ -84,7 +86,6 @@
     margin-left: 38px;
   }
 }
-
 
 .contact-form-submit {
   display: block;
