@@ -6,7 +6,8 @@ body {
     background-size: 130px, 100%;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/background-images/bg-mobile@2x.png);
+      background-image: url(../images/background-images/pic-donuts-mobile@2x.png),
+        url(../images/background-images/bg-mobile@2x.png);
       background-repeat: no-repeat;
       background-size: 100%;
     }
@@ -20,7 +21,8 @@ body {
     background-position-x: 254px, 0px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/background-images/bg-tablet@2x.png);
+      background-image: url(../images/background-images/pic-donuts-tablet@2x.png),
+        url(../images/background-images/bg-tablet@2x.png);
       background-repeat: no-repeat;
       background-size: 100%;
     }
@@ -28,15 +30,24 @@ body {
 
   @media screen and (min-width: 1200px) {
     background-image: url(../images/background-images/pic-donuts-desktop.png),
-      url(../images/background-images/bg-desktop.png);
+      url(../images/background-images/spoon-tablet.png),
+      url(../images/background-images/bg-desktop.png),
+      url(../images/background-images/flour-desktop.png),
+      url(../images/background-images/eaten-donut-desktop.png),
+      url(../images/background-images/bg-reviews-desktop.png);
+
     background-repeat: no-repeat;
-    background-size: 793px, 100%;
-    background-position: right top, left top;
+    background-size: 793px, 124px, 100%, 362px, 192px, 100%;
+    background-position: right top, top 175px left 0px, left top, right bottom,
+      bottom 415px left 77px, left bottom;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/background-images/bg-desktop@2x.png);
+      background-image: url(../images/background-images/pic-donuts-desktop@2x.png),
+        url(../images/background-images/bg-desktop@2x.png),
+        url(../images/background-images/bg-reviews-desktop@2x.png);
       background-repeat: no-repeat;
-      background-size: 100%;
+      background-size: 793px, 100%, 100%;
+      background-position: right top, left top, left bottom;
     }
   }
 }
