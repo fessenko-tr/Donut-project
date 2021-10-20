@@ -1,0 +1,25 @@
+.contact {
+  padding-bottom: 50px;
+  padding-top: 27px;
+
+  @media screen and (min-width:768px) {
+    padding-top: 77px;
+  }
+
+  @media screen and (min-width:1200px) {
+    padding-top: 51px;
+    padding-bottom: 82px;
+  }
+}
+
+.contact-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  @media screen and (min-width:1200px) {
+    font-size: 18px;
+  }
+}
