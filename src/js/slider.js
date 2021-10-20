@@ -1,8 +1,17 @@
 var $status = $('.paging-info');
 var $slickElement = $('.reviews-list');
+var $slickComment = $('.reviews-comments');
 
 var scrollCount = null;
 var scroll = null;
+
+$slickComment.slick({
+  slidesToShow: 1,
+  infinite: false,
+  arrows: false,
+  initialSlide: 1,
+  asNavFor: $slickElement,
+});
 
 $slickElement.slick({
   slidesToShow: 1,
@@ -11,6 +20,7 @@ $slickElement.slick({
   infinite: false,
   arrows: false,
   initialSlide: 1,
+  asNavFor: $slickComment,
   responsive: [
     {
       breakpoint: 767,
