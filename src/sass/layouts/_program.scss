@@ -20,7 +20,6 @@
 .program-right-side {
     @media screen and (min-width: 768px) {
         width: calc(100% / 2 - 15px);
-        margin-right: 15px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -46,6 +45,10 @@
     @media screen and (min-width: 1200px) {
         @include line-height(18px, 22px);
         margin-bottom: 30px;
+        .program-text:last-child {
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
     }
 }
 
