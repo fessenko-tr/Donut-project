@@ -91,6 +91,7 @@
     top: 0;
     width: 76px;
     height: 84px;
+    margin-top: -35px;
     
     @media screen and (min-width: 1200px) {
         width: 90px;
@@ -98,6 +99,14 @@
         margin-top: -45px;
     }
     transform: translateX(-50%)
+}
+
+.program-event-img-pos {
+    margin-top: -41px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: -52px;
+    }
 }
 
   .program-event-ball {
