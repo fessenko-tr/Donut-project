@@ -1,8 +1,8 @@
 .btn {
-  font-family: "Caveat Brush";
+  font-family: 'Caveat Brush';
   border-radius: 25px;
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: var(--button-color);
   border: none;
   min-width: 145px;
@@ -32,11 +32,11 @@
 
 .read-more-btn {
   border: none;
-  font-family: "Caveat Brush";
+  font-family: 'Caveat Brush';
   font-size: 18px;
 
   @include line-height(18px, 65px);
-  
+
   cursor: pointer;
   background: none;
   color: var(--button-color);
@@ -62,14 +62,20 @@
   align-self: center;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .reg-form-submit {
     margin-left: 25px;
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .reg-form-submit {
     margin-left: 38px;
   }
+}
+
+.contact-form-submit {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
