@@ -24,18 +24,13 @@
     margin-top: 51px;
     padding-bottom: 21px;
   }
+  .footer .social-list {
+    justify-content: center;
+  }
 }
 
-@media screen and (max-width: 1199px) {
-  .footer .social-list-item:not(:last-child) {
-    margin-right: 9px;
-  }
-}
 @media screen and (min-width: 1200px) {
-  .footer .social-list-item:not(:last-child) {
-    margin-right: 12px;
-  }
-  n .footer-address {
+  .footer-address {
     margin-top: 35px;
   }
 }
