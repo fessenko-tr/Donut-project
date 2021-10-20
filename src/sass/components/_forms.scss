@@ -30,3 +30,24 @@
     margin-bottom: 0;
   }
 }
+
+.contact-form {
+  text-align: center;
+}
+
+@media screen and (min-width:768px) {
+  .contact-form {
+    @include flex;
+    flex-direction: column;
+  }
+
+  .contact-input.form-input {
+    width: 410px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .contact-input.form-input {
+    width: 430px;
+  }
+}
