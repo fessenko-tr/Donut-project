@@ -1,14 +1,7 @@
 .social-list {
-  //   width: 61px;
   display: flex;
 
-  //   margin: 0 auto;
-
-  //   justify-content: space-between;
-
   @media screen and (min-width: 768px) {
-    // margin-left: 68px;
-    // margin-bottom: 80px;
     justify-content: flex-start;
   }
   @media screen and (max-width: 767px) {
@@ -33,18 +26,6 @@
   }
 }
 
-// @media screen and (max-width: 1199px) {
-//   .social-list-item:not(:last-child) {
-//     margin-right: 9px;
-//   }
-// }
-// @media screen and (min-width: 1200px) {
-//   .social-list-item:not(:last-child) {
-//     margin-right: 12px;
-//   }
-// .social-list-item:hover {
-//   fill: var(--primary-accent-color);
-// }
 .twitter-icon {
   @media screen and(max-width: 1199px) {
     width: 19px;
