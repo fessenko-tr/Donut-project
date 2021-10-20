@@ -2,6 +2,11 @@
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: center;
+        width: 635px;
+        padding: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 824px;
     }
 }
 
@@ -12,8 +17,8 @@
     }
     
     @media screen and (min-width: 1200px) {
-        width: 392px;
-        margin-right: 40px;
+        width: calc(100% / 2 - 17px);
+        margin-right: 37px;
     }
 }
 
@@ -23,7 +28,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        width: 392px;
+        width: calc(100% / 2 - 17px);
     }
 }
 
@@ -45,11 +50,13 @@
     @media screen and (min-width: 1200px) {
         @include line-height(18px, 22px);
         margin-bottom: 30px;
-        .program-text:last-child {
-            margin-top: 30px;
-            margin-bottom: 0;
-        }
     }
+    &:last-child {
+    @media screen and (min-width: 1200px) {        
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+}
 }
 
 .program-reset-margin {
@@ -78,7 +85,7 @@
     }
 }
   
-.program-event {
+/*.program-event {
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -91,15 +98,15 @@
         width: 180px;
         height: 220px;
     }
-}
+    &:nth-child(odd) {
+        margin-bottom: 25px;
+        
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 56px;
+          }
+      }
+}*/
   
-  .program-event:nth-child(odd) {
-      margin-bottom: 25px;
-      
-      @media screen and (min-width: 1200px) {
-          margin-bottom: 56px;
-        }
-    }
 
 .program-event-img {
     position: absolute;
@@ -111,14 +118,17 @@
     @media screen and (min-width: 1200px) {
         width: 90px;
         height: 110px;
+        margin-top: -40px;
     }
     transform: translateX(-50%)
 }
 
   .program-event-ball {
+    position: relative;
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
+    list-style-type: none;
     align-items: center;
     border-radius: 50%;
     width: 142px;
@@ -132,6 +142,13 @@
         height: 180px;
         padding-bottom: 11px;
     }
+    &:nth-child(odd) {
+        margin-bottom: 25px;
+        
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 56px;
+          }
+      }
   }
     
 .program-event-title {
