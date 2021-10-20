@@ -2,11 +2,7 @@
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: center;
-        width: 635px;
         padding: 0;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 824px;
     }
 }
 
@@ -25,10 +21,12 @@
 .program-right-side {
     @media screen and (min-width: 768px) {
         width: calc(100% / 2 - 15px);
+        display: flex;
     }
 
     @media screen and (min-width: 1200px) {
         width: calc(100% / 2 - 17px);
+        align-items: flex-end;
     }
 }
 
@@ -48,17 +46,33 @@
     @include line-height(16px, 19px);
 
     @media screen and (min-width: 1200px) {
+        
         @include line-height(18px, 22px);
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     &:last-child {
-    @media screen and (min-width: 1200px) {        
-        margin-top: 30px;
-        margin-bottom: 0;
+        @media screen and (min-width: 1200px) {        
+            margin-bottom: 0px;
+        }
     }
 }
-}
 
+.program-text-big {
+    color: var(--main-text-color);
+    @include line-height(16px, 19px);
+
+    @media screen and (min-width: 1200px) {   
+        @include line-height(18px, 22px);     
+        margin-top: 0px;
+        margin-bottom: 21px;
+    }
+    &:last-child {
+        @media screen and (min-width: 1200px) {        
+            margin-top: 21px;
+            margin-bottom: 0px;
+        }
+    }
+}
 .program-reset-margin {
     margin-bottom: 0;
 }
@@ -68,19 +82,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    width: 290px;
     
     @media screen and (min-width: 768px) {
-        width: 300px;
         margin-right: 15px;
         margin-left: 0;
+        margin-bottom: 0;
+        width: 298px;
     }
 
     @media screen and (min-width: 1200px) {
+        align-items: flex-end;
         width: 392px;
     }
 }
@@ -102,6 +117,8 @@
 }
 
 .program-event-img-pos {
+    width: 65px;
+    height: 78px;
     margin-top: -41px;
 
     @media screen and (min-width: 1200px) {
@@ -128,12 +145,16 @@
         height: 180px;
         padding-bottom: 11px;
     }
-    &:nth-child(odd) {
-        margin-bottom: 25px;
-        
+    &:nth-child(odd) {      
         @media screen and (min-width: 1200px) {
-            margin-bottom: 56px;
+            margin-bottom: 61px;
           }
+      }
+      &:nth-child(even) {      
+        margin-top: 56px;
+        @media screen and (min-width: 1200px) {
+        margin-top: 0px;    
+        }
       }
   }
     
