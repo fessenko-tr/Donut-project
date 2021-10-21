@@ -3,6 +3,7 @@
   @include line-height(16px, 20px);
   margin-bottom: 25px;
   color: #ab816c;
+  cursor: auto;
 }
 .paging-info::after,
 .paging-info::before {
@@ -44,6 +45,10 @@
   &-item:not(:last-child) {
     margin-right: 4px;
   }
+}
+
+.reviews-title {
+  cursor: auto;
 }
 
 //0-1199px
@@ -102,4 +107,17 @@
 .slick-slide,
 .slick-list {
   // transition: transform 24000ms linear !important;
+}
+
+.grabbable {
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.grabbable:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
 }
