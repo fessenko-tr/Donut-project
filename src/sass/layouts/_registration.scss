@@ -4,7 +4,6 @@
 
 .reg-text {
   width: 114px;
-
   margin-bottom: 25px;
 }
 
@@ -12,12 +11,11 @@
 .reg-cost {
   font-weight: 500;
   @include line-height(18px, 22px);
-
   text-align: right;
 }
 
 .reg-cost::after {
-  content: "";
+  content: '';
   width: 190px;
   display: block;
   border: 1px solid rgba(171, 129, 108, 0.5);
@@ -30,13 +28,13 @@
 .reg-form-text {
   margin-bottom: 17px;
 
-  @include line-height(16px, 20px)
+  @include line-height(16px, 20px);
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .reg .container {
     background-color: var(--registration-bg-color);
-  
+
     width: 290px;
     padding-left: 12px;
     padding-right: 12px;
@@ -52,33 +50,33 @@
 
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
     border-radius: 150px 150px 0px 0px;
- }
+  }
 
- .reg-form-left-side {
-  padding-bottom: 11px;
-}
+  .reg-form-left-side {
+    padding-bottom: 11px;
+  }
 
-.reg-form-text {
-  margin-bottom: 17px;
-}
+  .reg-form-text {
+    margin-bottom: 17px;
+  }
 
-.reg-text,
-.reg-cost {
-  font-weight: 500;
-  @include line-height(18px, 22px);
+  .reg-text,
+  .reg-cost {
+    font-weight: 500;
+    @include line-height(18px, 22px);
 
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}  
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
- .reg-cost::after {
+  .reg-cost::after {
     width: 265px;
     margin-top: 20px;
- }
+  }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .reg-container {
     width: 638px;
     margin-right: auto;
@@ -119,12 +117,12 @@
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .reg-container {
     width: 822px;
   }
 
   .reg-form-text {
-    @include line-height(18px, 22px)
+    @include line-height(18px, 22px);
   }
 }
