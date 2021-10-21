@@ -2,6 +2,7 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  var $hamburger = $('.hamburger');
 
   const toggleMenu = () => {
     const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -23,9 +24,24 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
-})();
 
-var $hamburger = $('.hamburger');
-$hamburger.on('click', function (e) {
-  $hamburger.toggleClass('is-active');
-});
+  $('.close').on('click', e => {
+    mobileMenu.classList.remove('is-open');
+    openMenuBtn.setAttribute('aria-expanded', false);
+    bodyScrollLock.enableBodyScroll(document.body);
+    $hamburger.toggleClass('is-active');
+  });
+
+  // $('#about-cl', '#program-cl', '#register-cl', '#contact-cl').on('click', e => {
+  //   $(this).on('click', e => {
+  //   mobileMenu.classList.remove('is-open');
+  //   openMenuBtn.setAttribute('aria-expanded', false);
+  //   bodyScrollLock.enableBodyScroll(document.body);
+  //   $hamburger.toggleClass('is-active');
+  //  });
+  // });
+
+  $hamburger.on('click', function (e) {
+    $hamburger.toggleClass('is-active');
+  });
+})();
