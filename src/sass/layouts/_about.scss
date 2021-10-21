@@ -40,16 +40,27 @@
 }
 
 .about-position::before {
-  content: "";
-  position: absolute;
-  width: 290px;
-  height: 310px;
-  top: -120px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url(../images/background-images/set-mobile.png);
+    content: "";
+    position: absolute;
+    width: 290px;
+    height: 289px;
+    top: -120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/background-images/set-mobile.png);
+    background-repeat: no-repeat;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width:767px),
+    screen and (min-resolution: 192dpi) and (max-width:767px),
+    screen and (min-resolution: 2dppx) and (max-width:767px) {
+    .about-position::before {
+    background-size: 290px 289px;
+    background-image: url(../images/background-images/set-mobile@2x.png);
+    background-repeat: no-repeat;
+    }
+  }
+  
 @media screen and (min-width: 768px) {
   .about-position {
     display: flex;
@@ -58,36 +69,41 @@
   }
 
   .about-position::before {
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-size: 330px 352px;
+    background-image: url(../images/background-images/set-tablet@2x.png);
+    background-repeat: no-repeat;
+    }
+
     width: 330px;
     height: 352px;
     top: 180px;
     left: 20%;
     transform: translate(-50%, -50%);
     background-image: url(../images/background-images/set-tablet.png);
+    background-repeat: no-repeat;
 
     @media screen and (min-width:1200px) {
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-size: 512px 547px;
+    background-image: url(../images/background-images/set-desktop@2x.png);
+    background-repeat: no-repeat;
+    }
+
     width: 512px;
-    height: 546px;
+    height: 547px;
     top: 40%;
     left: 15%;
     transform: translate(-50%, -50%);
     background-image: url(../images/background-images/set-desktop.png);
+    background-repeat: no-repeat;
     }
   }
 }
-
-// @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-// screen and (min-resolution: 192dpi) and (min-width: 768px),
-// screen and (min-resolution: 2dppx) and (min-width: 768px) {
-//   .about-position::before {
-//     width: 330px;
-//     height: 352px;
-//     top: 50%;
-//     left: 20%;
-//     transform: translate(-50%, -50%);
-//     background-image: url(../images/background-images/set-tablet@2x.png);
-//     }
-//   }
 
 .about-text-box {
   @media screen and (min-width: 768px) {
