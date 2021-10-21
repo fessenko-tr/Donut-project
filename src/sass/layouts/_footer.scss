@@ -9,6 +9,16 @@
   margin-right: auto;
   margin-left: auto;
 }
+.footer-address-phone,
+.footer-address-location {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--primary-accent-color);
+    fill: var(--primary-accent-color);
+  }
+}
 //0-767
 .footer-address {
   margin-top: 34px;
