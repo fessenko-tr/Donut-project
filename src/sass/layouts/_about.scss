@@ -25,9 +25,21 @@
 
 @media screen and (min-width: 768px) {
   .about-position {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     margin-left: -25px;
+  }
+
+  .about-position::before {
+    content: "";
+    position: absolute;
+    width: 330px;
+    height: 352px;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/background-images/set-tablet.png);
   }
 }
 
