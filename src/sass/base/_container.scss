@@ -8,6 +8,7 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 635px;
+    max-width: unset;
   }
 }
 @media screen and (min-width: 1200px) {
