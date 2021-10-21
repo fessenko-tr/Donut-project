@@ -1,218 +1,234 @@
 .program-container {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 824px;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 824px;
+  }
 }
 
 .program-left-side {
-    @media screen and (min-width: 768px) {
-        width: calc(100% / 2 - 17px);
-        margin-right: 38px;
-    }
-    
-    @media screen and (min-width: 1200px) {
-        margin-right: 37px;
-    }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 17px);
+    margin-right: 38px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 37px;
+  }
 }
 
 .program-right-side {
-    padding-top: 26px;
-    @media screen and (min-width: 768px) {
-        padding-top: 0;
-        width: calc(100% / 2 - 17px);
-        display: flex;
-    }
+  padding-top: 26px;
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    flex-basis: calc(100% / 2 - 17px);
+    display: flex;
+  }
 
-    @media screen and (min-width: 1200px) {
-        align-items: flex-end;
-    }
+  @media screen and (min-width: 1200px) {
+    align-items: flex-end;
+  }
 }
 
 .program-title {
-    color: var(--main-text-color);
-    text-align: center;
+  color: var(--main-text-color);
+  text-align: center;
 
-    @media screen and (min-width: 768px) {
-        text-align: start;
-    }
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 
-    @media screen and (min-width: 1200px) {
-        padding-top: 12px;
-        margin-bottom: 10px;
-    }
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+    margin-bottom: 10px;
+  }
 }
 
 .program-text {
-    color: var(--main-text-color);
+  color: var(--main-text-color);
+  margin-bottom: 10px;
+
+  @include line-height(16px, 19px);
+  @media screen and (min-width: 768px) {
+    @include line-height(18px, 22px);
     margin-bottom: 10px;
-
-    @include line-height(16px, 19px);
+  }
+  &:last-child {
     @media screen and (min-width: 768px) {
-        
-        @include line-height(18px, 22px);
-        margin-bottom: 10px;
+      margin-bottom: 0px;
     }
-    &:last-child {
-        @media screen and (min-width: 768px) {        
-            margin-bottom: 0px;
-        }
-    }
+  }
 
+  @media screen and (min-width: 1200px) {
+    @include line-height(18px, 22px);
+    margin-bottom: 15px;
+  }
+  &:last-child {
     @media screen and (min-width: 1200px) {
-        
-        @include line-height(18px, 22px);
-        margin-bottom: 15px;
+      margin-bottom: 0px;
     }
-    &:last-child {
-        @media screen and (min-width: 1200px) {        
-            margin-bottom: 0px;
-        }
-    }
+  }
 }
 
 .program-text-big {
-    color: var(--main-text-color);
-    @include line-height(16px, 19px);
+  color: var(--main-text-color);
+  @include line-height(16px, 19px);
 
-    @media screen and (min-width: 768px) {      
-        @include line-height(18px, 22px);
-        margin-top: 0px;
-        margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    @include line-height(18px, 22px);
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  &:last-child {
+    @media screen and (min-width: 768px) {
+      margin-top: 10px;
+      margin-bottom: 0px;
     }
-    &:last-child {
-        @media screen and (min-width: 768px) {        
-            margin-top: 10px;
-            margin-bottom: 0px;
-        }
-    }
+  }
 
-    @media screen and (min-width: 1200px) {      
-        @include line-height(18px, 22px);
-        margin-top: 0px;
-        margin-bottom: 21px;
+  @media screen and (min-width: 1200px) {
+    @include line-height(18px, 22px);
+    margin-top: 0px;
+    margin-bottom: 21px;
+  }
+  &:last-child {
+    @media screen and (min-width: 1200px) {
+      margin-top: 21px;
+      margin-bottom: 0px;
     }
-    &:last-child {
-        @media screen and (min-width: 1200px) {        
-            margin-top: 21px;
-            margin-bottom: 0px;
-        }
-    }
+  }
 }
 .program-reset-margin {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-
 
 .program-event-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 auto;
+  padding: 0;
+  width: 290px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    padding-top: 27px;
+    height: 423px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 392px;
     padding: 0;
-    width: 290px;
-    
-    @media screen and (min-width: 768px) {
-        margin: 0;
-        padding-top: 27px;
-        height: 423px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 392px;
-        padding: 0;
-        height: auto;
-    }
+    height: auto;
+  }
 }
-  
+
 .program-event-img {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 76px;
-    height: 84px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 76px;
+  height: 84px;
+  margin-top: -32px;
+
+  @media screen and (min-width: 1200px) {
+    width: 97px;
+    height: 107px;
+    margin-top: -45px;
+  }
+  transform: translateX(-50%);
+}
+
+.program-event-img-pos1 {
+  width: 65px;
+  height: 72px;
+  margin-top: -25px;
+
+  @media screen and (min-width: 1200px) {
+    width: 83px;
+    height: 92px;
     margin-top: -35px;
-    
-    @media screen and (min-width: 1200px) {
-        width: 90px;
-        height: 110px;
-        margin-top: -45px;
-    }
-    transform: translateX(-50%)
-}
-
-.program-event-img-pos {
-    width: 65px;
-    height: 78px;
-    margin-top: -41px;
-
-    @media screen and (min-width: 1200px) {
-        width: 90px;
-        height: 110px;
-        margin-top: -52px;
-    }
-}
-
-  .program-event-ball {
-    position: relative;
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-end;
-    list-style-type: none;
-    align-items: center;
-    border-radius: 50%;
-    width: 142px;
-    height: 142px;
-    background-color: var(--main-bg-color);
-    box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
-    padding-bottom: 8px;
-
-    @media screen and (min-width: 1200px) {
-        width: 180px;
-        height: 180px;
-        padding-bottom: 11px;
-    }
-    &:nth-child(odd) {      
-        margin-bottom: 56px;
-        @media screen and (min-width: 1200px) {
-            margin-bottom: 61px;
-          }
   }
 }
-    
+
+.program-event-img-pos2 {
+  width: 69px;
+  height: 76px;
+  margin-top: -32px;
+
+  @media screen and (min-width: 1200px) {
+    width: 88px;
+    height: 97px;
+    margin-top: -40px;
+  }
+}
+
+.program-event-img-pos3 {
+  width: 65px;
+  height: 72px;
+  margin-top: -25px;
+
+  @media screen and (min-width: 1200px) {
+    width: 83px;
+    height: 92px;
+    margin-top: -35px;
+  }
+}
+
+.program-event-ball {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  list-style-type: none;
+  align-items: center;
+  border-radius: 50%;
+  width: 142px;
+  height: 142px;
+  background-color: var(--main-bg-color);
+  box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+  padding-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    width: 180px;
+    height: 180px;
+    padding-bottom: 11px;
+  }
+  &:nth-child(odd) {
+    margin-bottom: 56px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 61px;
+    }
+  }
+}
+
 .program-event-title {
-    margin-top: 4px;
-    margin-bottom: 13px;
-    
-    @media screen and (min-width: 1200px) {
-        margin-top: 6px;
-        margin-bottom: 16px;
-    }
+  margin-top: 4px;
+  margin-bottom: 13px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 6px;
+    margin-bottom: 16px;
   }
+}
 
+.program-event-text {
+  margin-bottom: 13px;
 
-  .program-event-text {
-      margin-bottom: 13px;
+  @include line-height(14px, 17px);
 
-      @include line-height(14px, 17px);
-
-    @media screen and (min-width: 1200px) {
-        @include line-height(16px, 19px);
-        margin-bottom: 17px;
-    }
+  @media screen and (min-width: 1200px) {
+    @include line-height(16px, 19px);
+    margin-bottom: 17px;
   }
+}
 
-  .program-event-svg {
-      @media screen and (min-width: 1200px) {
-          width: 31px;
-          height: 25px;
-      }
+.program-event-svg {
+  @media screen and (min-width: 1200px) {
+    width: 31px;
+    height: 25px;
   }
+}
