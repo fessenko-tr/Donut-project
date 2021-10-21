@@ -1,12 +1,17 @@
 .about-text {
   color: var(--main-text-color);
-  margin-bottom: 30px;
+  margin-top: 10px;
 
   @include line-height(16px, 19px);
 
   @media screen and (min-width: 1200px) {
+    margin-top: 21px;
     @include line-height(18px, 22px);
   }
+}
+
+.about-text.first {
+  margin-top: 0px;
 }
 
 .about-title {
