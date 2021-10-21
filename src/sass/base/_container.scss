@@ -7,6 +7,7 @@
 }
 @media screen and (min-width: 768px) {
   .container {
+    max-width: unset;
     width: 635px;
     max-width: unset;
   }
