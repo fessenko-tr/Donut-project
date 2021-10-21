@@ -3,18 +3,19 @@
   @include line-height(16px, 20px);
   margin-bottom: 25px;
   color: #ab816c;
+  cursor: auto;
 
-  &::after,
-  &::before {
-    vertical-align: middle;
-    content: '';
-    display: inline-block;
-    width: 35px;
-    height: 0px;
-    border: 1px solid #ab816c;
+        &::after,
+     &::before {
+     vertical-align: middle;
+   content: '';
+     display: inline-block;
+      width: 35px;
+      height: 0px;
+   border: 1px solid #ab816c;
     transform: rotate(180deg);
-    margin: 10px;
-  }
+      margin: 10px;
+    }
 }
 
 .reviews {
@@ -45,6 +46,10 @@
   &-item:not(:last-child) {
     margin-right: 4px;
   }
+}
+
+.reviews-title {
+  cursor: auto;
 }
 
 //0-1199px
@@ -95,3 +100,17 @@
     margin-top: 30px;
   }
 }
+
+.grabbable {
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.grabbable:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
