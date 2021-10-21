@@ -49,6 +49,15 @@
 .header-nav-list {
   font-size: 18px;
 }
+.header-nav-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-accent-color);
+  }
+}
 .header-nav-list:not(:last-child) {
   margin-right: 20px;
 }
@@ -70,6 +79,13 @@
 .header-icon {
   width: 96px;
   height: 43px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--primary-accent-color);
+  }
 
   @media screen and(min-width: 1200px) {
     width: 158px;
@@ -154,6 +170,15 @@
   background: var(--button-color);
   border-radius: 25px;
   border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--primary-accent-color);
+    &:active {
+      background-color: var(--secondary-accent-color);
+    }
+  }
 
   @media screen and (min-width: 768px) {
     margin-left: 0;
