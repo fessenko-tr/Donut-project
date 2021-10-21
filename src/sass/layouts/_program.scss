@@ -211,6 +211,7 @@
 }
 
 .program-event-svg {
+    fill: var(--secondary-accent-color);
   @media screen and (min-width: 1200px) {
     width: 31px;
     height: 25px;
