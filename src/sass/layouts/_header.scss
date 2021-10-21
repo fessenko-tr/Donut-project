@@ -24,7 +24,6 @@
     padding-bottom: 25px;
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
     align-items: center;
   }
 }
@@ -48,18 +47,19 @@
 }
 .header-nav-list {
   font-size: 18px;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
 }
 .header-nav-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     color: var(--primary-accent-color);
   }
-}
-.header-nav-list:not(:last-child) {
-  margin-right: 20px;
 }
 
 .header-logo {
@@ -80,7 +80,7 @@
   width: 96px;
   height: 43px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -98,14 +98,11 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 11px;
-
-  font-family: Caveat Brush, curcive;
-  font-weight: normal;
+  font-family: 'Caveat Brush', cursive;
+  font-weight: 400;
   font-size: 30px;
   @include line-height(30px, 38px);
   text-align: center;
-
-  color: var(--main-text-color);
 
   @media screen and (min-width: 768px) {
     margin-left: 0;
@@ -115,13 +112,8 @@
   @media screen and (min-width: 1200px) {
     max-width: 490px;
     max-height: 130px;
-    font-family: Caveat Brush, curcive;
-    font-weight: normal;
     @include line-height(64px, 65px);
-
     margin-bottom: 15px;
-
-    color: var(--main-text-color);
   }
 }
 
@@ -129,10 +121,7 @@
   margin-bottom: 36px;
   font-weight: 500;
   @include line-height(16px, 20px);
-
   text-align: center;
-
-  color: var(--main-text-color);
 
   @media screen and (min-width: 768px) {
     margin-left: 0;
@@ -141,12 +130,9 @@
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 30px;
-
     font-weight: 500;
     font-size: 24px;
     @include line-height(24px, 29px);
-
-    color: var(--main-text-color);
   }
 }
 
@@ -159,8 +145,8 @@
   margin-right: auto;
   padding-top: 10px;
 
-  font-family: Caveat Brush;
-  font-weight: normal;
+  font-family: 'Caveat Brush', cursive;
+  font-weight: 400;
   font-size: 18px;
 
   text-align: center;
@@ -171,7 +157,7 @@
   border-radius: 25px;
   border: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: var(--primary-accent-color);
