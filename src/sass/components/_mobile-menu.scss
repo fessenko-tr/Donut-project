@@ -25,16 +25,29 @@
 }
 
 .mobile-btn {
-  border: none;
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 21px;
   background-color: transparent;
-  padding: 0;
+  border: none;
   cursor: pointer;
+  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    top: 26px;
+    right: 67px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .js-close-menu {
   position: absolute;
-  top: 20px;
-  right: 21px;
+  // top: 20px;
+  // right: 21px;
 }
 
 .mobile-list {
@@ -52,7 +65,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .js-open-menu {
     display: none;
   }
