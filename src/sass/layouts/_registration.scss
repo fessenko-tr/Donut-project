@@ -100,6 +100,25 @@
     background-image: url(../images/background-images/eaten-donut-tablet.png);
     background-repeat: no-repeat;
   }
+
+  @media screen and (min-width: 1200px) {
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-size: 257px 255px;
+      background-image: url(../images/background-images/eaten-donut-desktop@2x.png);
+      background-repeat: no-repeat;
+    }
+
+    width: 257px;
+    height: 255px;
+
+    top: 26%;
+    left: -4%;
+
+    background-image: url(../images/background-images/eaten-donut-desktop.png);
+    background-repeat: no-repeat;
+  }
 }
 
 .reg-container::after {
