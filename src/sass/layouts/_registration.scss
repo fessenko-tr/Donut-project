@@ -14,7 +14,7 @@
   text-align: right;
 }
 
-.reg-cost::after {
+.reg-form-left-side::after {
   content: '';
   width: 190px;
   display: block;
@@ -22,7 +22,7 @@
 }
 
 .reg-form-left-side {
-  padding-bottom: 11px;
+  margin-bottom: 11px;
 }
 
 .reg-form-text {
@@ -70,7 +70,7 @@
     margin-right: auto;
   }
 
-  .reg-cost::after {
+  .reg-form-left-side::after {
     width: 265px;
     margin-top: 20px;
   }
@@ -97,7 +97,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-right: 60px;
+    margin-right: 60px;
     text-align: right;
   }
 
@@ -107,9 +107,9 @@
     flex-direction: column;
   }
 
-  .reg-cost::after {
+  .reg-form-left-side::after {
     position: absolute;
-    right: -38%;
+    right: -110%;
     top: 90px;
     display: block;
     transform: rotate(90deg);
