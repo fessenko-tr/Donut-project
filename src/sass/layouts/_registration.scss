@@ -107,7 +107,7 @@
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-size: 606px 589px;
+      background-size: 280px 374px;
       background-image: url(../images/background-images/confetti-tablet@2x.png);
       background-repeat: no-repeat;
     }
@@ -116,14 +116,33 @@
     position: absolute;
     z-index: -10;
 
-    width: 606px;
-    height: 589px;
+    width: 280px;
+    height: 374px;
 
-    top: 80%;
-    left: 96%;
+    top: 78%;
+    left: 89%;
     transform: translate(-50%, -50%);
 
     background-image: url(../images/background-images/confetti-tablet.png);
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-size: 606px 589px;
+      background-image: url(../images/background-images/confetti-desktop@2x.png);
+      background-repeat: no-repeat;
+    }
+
+    width: 606px;
+    height: 589px;
+
+    top: 89%;
+    left: 96%;
+
+    background-image: url(../images/background-images/confetti-desktop.png);
     background-repeat: no-repeat;
   }
 }
