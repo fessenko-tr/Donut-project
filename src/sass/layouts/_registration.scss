@@ -104,6 +104,14 @@
 
 .reg-container::after {
   @media screen and (min-width: 768px) {
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-size: 606px 589px;
+      background-image: url(../images/background-images/confetti-tablet@2x.png);
+      background-repeat: no-repeat;
+    }
+
     content: '';
     position: absolute;
     z-index: -10;
@@ -112,7 +120,7 @@
     height: 589px;
 
     top: 80%;
-    right: 96%;
+    left: 96%;
     transform: translate(-50%, -50%);
 
     background-image: url(../images/background-images/confetti-tablet.png);
