@@ -1,8 +1,8 @@
 .program-container {
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-top: -35px;
-    margin-left: -35px;
+    margin-top: -17px;
+    margin-left: -17px;
     padding-top: 38px;
   }
   @media screen and (min-width: 768px) {
@@ -14,7 +14,7 @@
 .program-left-side {
   @media screen and (min-width: 768px) {
     width: calc((100% - 35px) / 2);
-    margin-left: 35px;
+    margin-left: 17px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -211,7 +211,7 @@
 }
 
 .program-event-svg {
-    fill: var(--secondary-accent-color);
+  fill: var(--secondary-accent-color);
   @media screen and (min-width: 1200px) {
     width: 31px;
     height: 25px;
