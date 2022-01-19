@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://fessenko-tr.github.io/html-css-project",
+  "homepage": "https://fessenko-tr.github.io/Donut-project",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /html-css-project/"
+    "build": "parcel build src/*.html --public-url /Donut-project/"
   },
   "repository": {
     "type": "git",
